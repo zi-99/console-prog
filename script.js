@@ -1,7 +1,6 @@
 
-// ==========================================
+
 // STUDENT MANAGEMENT & RESULTS ANALYSIS SYSTEM
-// ==========================================
 
 // 1. STUDENT CLASS
 class Student {
@@ -32,7 +31,7 @@ class Student {
     else return "F";
   }
 
-  // Determine final result
+  // final result
   getResult(average) {
     if (average >= 50 && this.attendance >= 75) {
       return "Passed";
@@ -42,10 +41,7 @@ class Student {
   }
 }
 
-// ==========================================
 // 2. STUDENTS ARRAY
-// ==========================================
-
 const studentsList = [
   new Student(1, "Ahmed", [80, 85, 90], 90),
   new Student(2, "Sara", [40, 45, 50], 80),
@@ -53,10 +49,7 @@ const studentsList = [
   new Student(4, "Mona", [90, 95, 85], 95)
 ];
 
-// ==========================================
 // 3. STUDENTS REPORT
-// ==========================================
-
 console.log("%c STUDENTS MANAGEMENT SYSTEM ",
   "background: #263238; color: #fff; font-size: 18px; padding: 10px;"
 );
@@ -79,10 +72,7 @@ console.group("STUDENTS REPORT");
 console.table(studentsReport);
 console.groupEnd();
 
-// ==========================================
 // 4. MERCY COMMITTEE
-// ==========================================
-
 // Filter students with averages between 40 and 49
 const strugglingStudents = studentsList.filter((student) => {
   const average = student.getAverage();
@@ -129,10 +119,8 @@ console.log(
 
 console.groupEnd();
 
-// ==========================================
-// 5. SUMMARY
-// ==========================================
 
+// 5. SUMMARY
 const passedCount = studentsList.filter((student) => {
   const average = student.getAverage();
   return student.getResult(average) === "Passed";
