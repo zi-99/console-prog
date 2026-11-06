@@ -21,12 +21,6 @@ A JavaScript-based student management system that calculates student averages, a
 - Array Methods
 - Browser Developer Console
 
-## How to Run
-1. Download or clone the repository.
-2. Open your browser.
-3. Open Developer Tools using F12.
-4. Navigate to the Console tab.
-5. Paste the contents of script.js and press Enter.
 
 ## Project Structure
 
